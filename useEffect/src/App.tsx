@@ -3,15 +3,24 @@ import { useState } from 'react'
 // import './App.css'
 import FirstInput from './components/FirstInput'
 import SecondInput from './components/SecondInput'
-
+import DisabledButton from './components/DisabledButton'
+import CountButton from './components/CountButton'
+import ColorDropDown from './components/ColorDropDown'
 
 function App() {
- 
 
   return (
     <div>
-     <FirstInput />
+      <div className='blocks'>
+     <FirstInput  />
      <SecondInput />
+     <DisabledButton />
+     <CountButton /> 
+     <ColorDropDown />
+     </div>
+      <div className='blocks'>
+      
+      </div>
     </div>
   )
 }

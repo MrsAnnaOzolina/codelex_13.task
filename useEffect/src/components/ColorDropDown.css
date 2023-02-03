@@ -1,0 +1,13 @@
+.gap{
+    margin-right: 20px;
+}
+.box{
+    width: 50px;
+    height: 50px;
+    display: none;
+    /* background-color: brown; */
+}
+.box1{
+    width: 50px;
+    height: 50px;
+}
