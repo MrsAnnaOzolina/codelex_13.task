@@ -14,7 +14,7 @@ setTimeout(()=> {setIsButtonDisabled(false) }, 5000)
     className="waves-effect waves-light btn-large"
     disabled={isButtonDisabled}
     >
-        Disables button for 5 sec. 
+        Disabled button for 5 sec. 
         <i className="material-icons right"> ↻ </i>
     </button>
       </div>
