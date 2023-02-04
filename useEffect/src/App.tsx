@@ -11,6 +11,8 @@ import Task1 from './components/Task1'
 import Task2 from './components/Task2'
 import Task3 from './components/Task3'
 
+import SecondPicture from './components/SecondPicture'
+import SecondPicture2 from './components/SecondPicture2'
 function App() {
 
   return (
@@ -23,7 +25,9 @@ function App() {
      <ColorDropDown />
      </div>
       <div className='blocks'>
-
+      <SecondPicture />
+      <br></br>
+      <SecondPicture2 />
       </div>
       <div className='blocks'>
       <Task1 />

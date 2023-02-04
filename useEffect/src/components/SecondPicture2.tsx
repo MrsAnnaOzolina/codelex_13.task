@@ -1,19 +1,21 @@
 import { useState, useEffect, useRef } from "react";
 import './SecondPicture.css'
 
-function SecondPicture() {
+function SecondPicture2() {
     const [count, setCount] = useState(0)
-    const [input, setInput] = useState("");
+    const [input, setInput] = useState("")
     const firstUpdate = useRef(true); 
-    // console.log("Render")
+
     useEffect(()=>{
-        if(firstUpdate.current){
-            console.log("first render")
-            firstUpdate.current= false;
-            return
-        }
-        console.log(" Render")
-    })
+      if(firstUpdate.current){
+          setCount(100);
+          firstUpdate.current= false;
+         
+          return
+      }
+   
+  })
+
 
     return (
       <div className="secondPicturebox">
@@ -21,15 +23,14 @@ function SecondPicture() {
       <button 
       className="waves-effect waves-light btn"
        onClick={()=>{
-        setCount((count + 1)), 
-        console.log('changing count')
+        setCount((count + 1))
     }}> + </button> 
-        <h1> Count: {count}</h1>
+        <h1 > Count: {count}</h1>
         <input
         type='text'
         placeholder="write something"
         value={input}
-        onChange={(e) => {setInput(e.target.value), console.log("input change")}}
+        onChange={(e) => setInput(e.target.value)}
         ></input>
        <h1>{input}</h1>
        </div>
@@ -37,4 +38,4 @@ function SecondPicture() {
     )
   }
   
-  export default SecondPicture
+  export default SecondPicture2
