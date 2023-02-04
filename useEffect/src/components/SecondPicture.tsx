@@ -5,6 +5,7 @@ function SecondPicture() {
     const [count, setCount] = useState(0)
     const [input, setInput] = useState("");
     const firstUpdate = useRef(true); 
+  
     // console.log("Render")
     useEffect(()=>{
         if(firstUpdate.current){
@@ -14,6 +15,8 @@ function SecondPicture() {
         }
         console.log(" Render")
     })
+
+    
 
     return (
       <div className="secondPicturebox">
